@@ -58,7 +58,7 @@
             font-size: 100px;
             margin-left: 10px;
             font-weight: bold;
-            color: #FF9800;
+            color: #800080;
             transition: transform 0.5s ease, opacity 0.5s ease, color 0.5s ease;
         }
 
@@ -89,7 +89,7 @@
             position: absolute;
             width: 3px;
             height: 3px;
-            background-color: orange;
+            background-color: #7d2181;
             border-radius: 50%;
             opacity: 0;
             pointer-events: none;
@@ -145,19 +145,19 @@
         function mostrarNumero() {
             numerosDiv.textContent = numeroActual;
 
-            if (numeroActual === 50) {
-                numerosDiv.style.color = '#FF8C00';
-                numerosDiv.style.WebkitTextStroke = '2px white';
+            if (numeroActual === 300) {
+                numerosDiv.style.color = '#800080';
+                numerosDiv.style.WebkitTextStroke = '4px white';
                 numerosDiv.style.textStroke = '2px white';
             } else {
-                numerosDiv.style.color = '#FF9800';
+                numerosDiv.style.color = '#800080';
                 numerosDiv.style.WebkitTextStroke = '';
                 numerosDiv.style.textStroke = '';
             }
 
             numeroActual++;
 
-            if (numeroActual > 50) {
+            if (numeroActual > 300) {
                 clearInterval(intervalo);
                 llama.classList.add('sacudir');
                 numerosDiv.classList.add('sacudir'); // Añadido aquí
